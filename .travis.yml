@@ -1,7 +1,12 @@
+sudo: false
+
 language: node_js
+
 node_js:
-  - 7
- sudo: required
+  - "0.10.45"
+
+before_install:
+  - "curl https://install.meteor.com/ | sh"
 rvm: 
   - 2.2
   - jruby
